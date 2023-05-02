@@ -2,10 +2,10 @@ import { useContext } from "react";
 
 import Card from "../ui/Card";
 import MeetupItemStyle from "./MeetupItem.module.css";
-import FavoritesContext from "../../store/favourite-context";
+import FavouritesContext from "../../store/favourite-context";
 
 function MeetupItem(props) {
-  const favouritesCtx = useContext(FavoritesContext);
+  const favouritesCtx = useContext(FavouritesContext);
 
   const itemIsFavourite = favouritesCtx.itemIsFavourite(props.id);
 
